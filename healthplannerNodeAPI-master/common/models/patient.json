@@ -1,0 +1,89 @@
+{
+  "name": "Patient",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "PatientName",
+      "required": true
+    },
+    "address": {
+      "type": "PostalAddress",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true
+    },
+    "dateOfBirth": {
+      "type": "date",
+      "required": true
+    },
+    "mailId": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "maritalStatus": {
+      "type": "string",
+      "required": true
+    },
+    "medHistory": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "height": {
+      "type": "number",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": true
+    },
+    "bmi": {
+      "type": "number"
+    },
+    "diet": {
+      "type": "string",
+      "required": true
+    },
+    "activity": {
+      "type": "string",
+      "required": true
+    },
+    "tobacoUse": {
+      "type": "string",
+      "required": true
+    },
+    "alchoholUse": {
+      "type": "string",
+      "required": true
+    },
+    "caffineUse": {
+      "type": "string",
+      "required": true
+    },
+    "allergies": {
+      "type": "string",
+      "required": true
+    },
+    "allergicFrom": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

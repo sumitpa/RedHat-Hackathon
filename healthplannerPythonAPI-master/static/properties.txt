@@ -1,0 +1,2 @@
+mongodburl=mongodb://root:root@mongo:27017/containercrushdb
+mongodbname=containercrushdb

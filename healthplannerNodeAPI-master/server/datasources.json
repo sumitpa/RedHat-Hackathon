@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodbDS": {
+    "host": "mongo",
+    "port": 27017,
+    "url": "mongodb://root:root@mongo:27017/containercrushdb",
+    "database": "containercrushdb",
+    "password": "root",
+    "name": "mongodbDS",
+    "user": "root",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

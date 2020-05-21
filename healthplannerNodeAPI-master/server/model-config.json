@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "PatientName": {
+    "dataSource": null,
+    "public": false
+  },
+  "PostalAddress": {
+    "dataSource": null,
+    "public": false
+  },
+  "Patient": {
+    "dataSource": "mongodbDS",
+    "public": true
+  }
+}

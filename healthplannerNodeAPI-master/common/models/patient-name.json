@@ -1,0 +1,26 @@
+{
+  "name": "PatientName",
+  "base": "Model",
+  "idInjection": false,
+  "forceId": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "excludeBaseProperties": [
+    "id"
+  ]
+}
