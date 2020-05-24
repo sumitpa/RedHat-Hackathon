@@ -5,7 +5,7 @@ COPY . /home/code
 WORKDIR /home/code
 RUN mvn clean install
 EXPOSE 8080
-COPY ./target/healthplanner-0.0.1-SNAPSHOT.jar /usr/app/
+COPY /home/code/target/healthplanner-0.0.1-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
 ENTRYPOINT ["sh", "-c"]
 CMD ["exec java -jar $APP_FILE"]
