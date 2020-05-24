@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-RUN apk add curl
+RUN apk add curl jdk mvn
 RUN mkdir -p /home/code
 COPY . /home/code
 WORKDIR /home/code
