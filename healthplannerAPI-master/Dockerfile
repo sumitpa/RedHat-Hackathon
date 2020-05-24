@@ -1,4 +1,5 @@
 FROM openjdk:8-jre-alpine
+RUN apk add curl
 ENV APP_FILE healthplanner-0.0.1-SNAPSHOT.jar
 ENV APP_HOME /usr/app
 EXPOSE 8080
